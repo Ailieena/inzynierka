@@ -16,7 +16,7 @@ UPLOAD_FOLDER_DIR = Path(app.config['UPLOAD_FOLDER'])
 USER_IMAGE_PATH = UPLOAD_FOLDER_DIR / 'uploaded-img.jpg'
 CONVERTED_IMAGE_PATH = UPLOAD_FOLDER_DIR / 'converted-img.png'
 UPLOAD_FOLDER_DIR.mkdir(exist_ok=True, parents=True)
-model = keras.models.load_model('../model3.keras')
+model = keras.models.load_model('../model2.keras')
 
 def get_ext(filename: str):
     return filename.rsplit('.', 1)[1].lower()
